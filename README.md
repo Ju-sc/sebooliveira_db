@@ -73,60 +73,98 @@ Sistema de gerenciamento para Sebo/Biblioteca Escolar desenvolvido com FastAPI e
         * ➣ Abra o navegador em: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 🔌 Documentação das Rotas (Endpoints)
+
   ➣ Usuários
+  
 Método
+
 Rota
+
 Descrição
 
+
   ➣ POST
+  
 /CadUser/
+
 Cria um novo usuário (Aluno ou Voluntário).
 
+
   ➣ GET
+  
 /ListUsuarios/
+
 Lista todos os usuários.
 
+
   ➣ Livros (Acervo)
+  
 Método
 Rota
 Descrição
 
+
   ➣ POST
+  
 /CadLivro/
+
 Cadastra um novo título no acervo.
 
   ➣ GET
+  
 /ListarLivros/
+
 Lista todos os livros cadastrados.
 
   ➣ PUT
+  
 /AtualizarLivro/{isbn}
+
 Atualiza dados de um livro buscando pelo ISBN. Campos são opcionais.
+
 
   ➣ Exemplares (Estoque)
 Método
+
 Rota
+
 Descrição
 
+
   ➣ POST
+  
 /CadExemplar/
+
 Cria uma cópia física. Usa o isbn_do_livro para vincular automaticamente.
 
+
   ➣ GET
+  
 /ListarExemplares/
+
 Lista o estoque. Retorna o objeto livro aninhado.
 
+
   ➣ DELETE
+  
 /DelExemplar/
+
 Remove um exemplar físico do banco de dados pelo ID.
 
+
   ➣ Trocas
+  
 Método
+
 Rota
+
 Descrição
 
+
   ➣ POST
+  
 /RealizarTroca/
+
 Registra a troca, baixa o estoque de saída e disponibiliza a entrada.
 
 
@@ -140,6 +178,7 @@ database.py: Configuração da conexão com o MySQL.
 👨‍💻 Autores
 Desenvolvido para o projeto SebOOLiveira por Jailine Coelho, Juliana Leite, Julio Da Cruz e Matheus Mafra.
                                       Focado em soluções simples e diretas.
+
 
 
 
