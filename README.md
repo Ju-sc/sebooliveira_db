@@ -34,36 +34,43 @@ Sistema de gerenciamento para Sebo/Biblioteca Escolar desenvolvido com FastAPI e
     O livro que entra (do aluno para o acervo) fica Disponível.
     Registro histórico da transação na tabela de Trocas.
 
-🛠️ Como Rodar o Projeto
-  ➣ Pré-requisitos
-   ➣ Python instalado.
-    ➣ MySQL Server rodando.
-     ➣ Um banco de dados criado (ex: sebooliveira_db).
-      ➣ Passo a Passo
-       ➣ Clone o repositório:
-        ➣ Bash
-         ➣ git clone https://github.com/SeuUsuario/SebOOLiveira-API.git
-          ➣ cd SebOOLiveira-API
-           ➣ Crie um ambiente virtual (Opcional, mas recomendado):
-            ➣ Bash
-             ➣ python -m venv venv
-              ➣ # Windows:
-               ➣ venv\Scripts\activate
-                ➣ # Linux/Mac:
-                 ➣ source venv/bin/activate
-                  ➣ Instale as dependências:
-                   ➣ Bash
-                    ➣ pip install -r requirements.txt
-                     ➣ Configure o Banco de Dados:
-                      ➣ Abra o arquivo database.py.
-                       ➣ Ajuste a linha SQLALCHEMY_DATABASE_URL com seu usuário e senha do MySQL:
-                        ➣ Python
-                         ➣ "mysql+pymysql://SEU_USUARIO:SUA_SENHA@localhost:3306/NOME_DO_BANCO"
-                          ➣ Rode o servidor:
-                           ➣ Bash
-                            ➣ uvicorn main:app --reload
-                             ➣ Acesse a Documentação:
-                              ➣ Abra o navegador em: http://127.0.0.1:8000/docs
+## 🛠️ Como Rodar o Projeto
+
+* **➣ Pré-requisitos**
+    * ➣ Python instalado.
+    * ➣ MySQL Server rodando.
+    * ➣ Um banco de dados criado (ex: `sebooliveira_db`).
+
+* **➣ Passo a Passo**
+    * **➣ Clone o repositório:**
+        ```bash
+        git clone [https://github.com/SeuUsuario/SebOOLiveira-API.git](https://github.com/SeuUsuario/SebOOLiveira-API.git)
+        cd SebOOLiveira-API
+        ```
+    * **➣ Crie um ambiente virtual (Opcional, mas recomendado):**
+        ```bash
+        python -m venv venv
+        # Windows:
+        venv\Scripts\activate
+        # Linux/Mac:
+        source venv/bin/activate
+        ```
+    * **➣ Instale as dependências:**
+        ```bash
+        pip install -r requirements.txt
+        ```
+    * **➣ Configure o Banco de Dados:**
+        * ➣ Abra o arquivo `database.py`.
+        * ➣ Ajuste a linha `SQLALCHEMY_DATABASE_URL` com seu usuário e senha do MySQL:
+            ```python
+            "mysql+pymysql://SEU_USUARIO:SUA_SENHA@localhost:3306/NOME_DO_BANCO"
+            ```
+    * **➣ Rode o servidor:**
+        ```bash
+        uvicorn main:app --reload
+        ```
+    * **➣ Acesse a Documentação:**
+        * ➣ Abra o navegador em: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 🔌 Documentação das Rotas (Endpoints)
   ➣ Usuários
@@ -133,6 +140,7 @@ database.py: Configuração da conexão com o MySQL.
 👨‍💻 Autores
 Desenvolvido para o projeto SebOOLiveira por Jailine Coelho, Juliana Leite, Julio Da Cruz e Matheus Mafra.
                                       Focado em soluções simples e diretas.
+
 
 
 
